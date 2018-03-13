@@ -16,12 +16,14 @@ class App extends Component {
         datasets: [{
           label: "7th Floor",
           backgroundColor: 'rgba(52, 152, 219, 0.75)',
+          fill: false,
           data: [
             5, 10, 15, 30, 50
           ]
         }, {
           label: "8th Floor",
           backgroundColor: 'rgba(231, 76, 60, 0.75)',
+          fill: false,
           data: [
             300, 500, 100, 40, 120
           ]
@@ -97,10 +99,14 @@ class App extends Component {
         datasets: [{
           label: titles[0],
           backgroundColor: 'rgba(52, 152, 219, 0.75)',
+          borderColor: 'rgba(52, 152, 219, 0.75)',
+          fill: false,
           data: data1
         }, {
           label: titles[1],
           backgroundColor: 'rgba(231, 76, 60, 0.75)',
+          borderColor: 'rgba(231, 76, 60, 0.75)',
+          fill: false,
           data: data2
         }]
       },
