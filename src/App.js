@@ -65,8 +65,8 @@ class App extends Component {
   loadData() {
     //var proxyUrl = 'http://localhost:8080/',
     //   targetUrl = 'http://192.168.1.204/logfile.rb?lf=0';
-    //var tempURL = appenv === 'production' ? 'http://192.168.1.204/logfile.rb?lf=0' : 'http://localhost:8080/http://192.168.1.204/logfile.rb?lf=0';
-    var tempURL = 'http://localhost:8080/http://192.168.1.204/logfile.rb?lf=0';
+    var tempURL = appenv === 'production' ? 'http://192.168.1.29:8080/http://192.168.1.204/logfile.rb?lf=0' : 'http://localhost:8080/http://192.168.1.204/logfile.rb?lf=0';
+    //var tempURL = 'http://localhost:8080/http://192.168.1.204/logfile.rb?lf=0';
     fetch(tempURL)
       .then(blob => blob.text())
       .then(data => {
